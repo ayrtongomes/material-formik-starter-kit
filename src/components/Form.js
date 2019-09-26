@@ -1,7 +1,13 @@
 import React from 'react';
 
-// import { Container } from './styles';
+import { Form } from 'formik';
 
-const Form = () => <div />;
+const Form = () => {
+    return (
+        <Form>
+
+        </Form>
+    );
+};
 
 export default Form;
