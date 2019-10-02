@@ -1,12 +1,8 @@
 import React from 'react';
 
-// import { Container } from './styles';
-import FormControl from "@material-ui/core/FormControl";
-import InputLabel from "@material-ui/core/InputLabel";
-import FormHelperText from "@material-ui/core/FormHelperText";
-import Input from "@material-ui/core/Input";
+import { FormControl, InputLabel, FormHelperText, Input } from "@material-ui/core";
 
-function FieldInpu({ ...props }) {
+function FieldInpu({ field, ...props }) {
 
     return (
         <>
@@ -20,6 +16,7 @@ function FieldInpu({ ...props }) {
                 ) : null}
                 <Input
                     id={props.id}
+                    {...field}
                 />
                 {props.helpText !== undefined ? (
                     <FormHelperText>
