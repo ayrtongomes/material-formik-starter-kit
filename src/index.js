@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import Form from 'Form.js';
+import Form from './components/Form';
 
 import { Formik } from 'formik';
 
@@ -10,7 +9,11 @@ import * as serviceWorker from './serviceWorker';
 
 const App = () =>
     <>
-        <Formik>
+        <Formik
+            onSubmit={values => {
+                alert(JSON.stringify(values, null, 2))
+            }}
+        >
             <Form />
         </Formik>
     </>

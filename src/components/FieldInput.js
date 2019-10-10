@@ -2,11 +2,11 @@ import React from 'react';
 
 import { FormControl, InputLabel, FormHelperText, Input } from "@material-ui/core";
 
-function FieldInpu({ field, ...props }) {
+function FieldInput({ field, ...props }) {
 
     return (
         <>
-            <FormControl>
+            <FormControl fullWidth style={{ marginBottom: '20px' }}>
                 {props.label !== undefined ? (
                     <InputLabel
                         htmlFor={props.id}
